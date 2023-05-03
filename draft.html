@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+          background-color: rgb(173, 203, 230);
+        }
+      </style>
+<head>
+    <title>Draft - Your Website Name</title>
+    <link rel="stylesheet" type="text/css" href="favorite.css">
+    <style>
+        #message {
+            display: none;
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #e6ffe6;
+            border: 1px solid #99ff99;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="favorite.html">Home</a>
+      </nav>
+      <h1>Pick Your Team</h1>
+<p>Instructions: Select your team from the list.</p>
+<select id="team" name="team">
+  <option value="">Select a team</option>
+  <option value="Atlanta Falcons">Atlanta Falcons</option>
+  <option value="Carolina Panthers">Carolina Panthers</option>
+  <option value="New Orleans Saints">New Orleans Saints</option>
+  <option value="Denver Broncos">Denver Broncos</option>
+  <option value="Detroit Lions">Detroit Lions</option>
+  <option value="Dallas Cowboys">Dallas Cowboys</option>
+  <option value="New York Jets">New York Jets</option>
+  <option value="New York Giants">New York Giants</option>
+  <option value="Tennessee Titans">Tennessee Titans</option>
+  <option value="New England Patriots">New England Patriots</option>
+</select>
+<button type="button" onclick="saveTeam()">Save</button>
+
+<div class="favorite-team" id="favorite-team"></div>
+    <p>Your favorite team is:</p>
+    <h2 id="favorite-team-name"></h2>
+</div>
+<br>
+    <h1>Draft Your Team</h1>
+    <p>Instructions: Draft 5 SKILL players for your team. You will not know who the best rookies  are until the 2024 NFL season is over.</p>
+    <form>
+        <label for="player1">Player 1:</label>
+        <select id="player1" name="player1">
+            <option value="">Select a player</option>
+            <option value="Bryce Young">Bryce Young</option>
+            <option value="CJ Stroud">CJ Stroud</option>
+            <option value="Paris Johnson">Paris Johnson</option>
+            <!-- add more options here -->
+          </select>
+<br>
+        <label for="player2">Player 2:</label>
+        <select id="player2" name="player2">
+            <option value="">Select a player</option>
+            <option value="Jalen Carter">Jalen Carter</option>
+            <option value="Jack Campbell">Jack Campbell</option>
+            <option value="Zay Flowers">Zay Flowers</option>
+            <!-- add more options here -->
+          </select>
+<br>
+        <label for="player3">Player 3:</label>
+        <select id="player3" name="player3">
+            <option value="">Select a player</option>
+            <option value="Miles Murphy">Miles Murphy</option>
+            <option value="Nolan Smith">Nolan Smith</option>
+            <option value="Will Levis">Will Levis</option>
+            <!-- add more options here -->
+          </select>
+<br>
+        <label for="player4">Player 4:</label>
+        <select id="player4" name="player4">
+            <option value="">Select a player</option>
+            <option value="Derrick Hall">Derrick Hall</option>
+            <option value="Brian Branch">Brian Branch</option>
+            <option value="Cam Smith">Cam Smith</option>
+            <!-- add more options here -->
+          </select>
+<br>
+        <label for="player5">Player 5:</label>
+        <select id="player5" name="player5">
+            <option value="">Select a player</option>
+            <option value="DJ Turner">DJ Turner</option>
+            <option value="Zach Pickens">Zach Pickens</option>
+            <option value="Drew Sanders">Drew Sanders</option>
+            <!-- add more options here -->
+          </select>
+  <br>     
+        <button type="button" onclick="submitDraft()">Submit</button>
+
+    </form>
+    <div id="message">Congratulations on the 2024 draft. Good luck this season!</div>
+    <script src="draft.js"></script>
+    
+</body>
+</html>
